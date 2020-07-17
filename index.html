@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">>
 </head>
 <body>
-    <script src="app.js"></script>
+   
 <!-- // chapter 43 to 48--task 1
 
     <a href="" onclick="greeting()">Click Me!</a> -->
@@ -90,53 +91,68 @@
  -->
 
   <!-- chapter 49 to 52---task 3-->
-
-    <!-- <h1>Student Form</h1>
- <form >
-    <label>First Name</label>
-    <input class="formdata" type="text"></input><br><br>
-    <label>Last Name</label>
-    <input class="formdata" type="text"></input><br><br>
-    <label>Number</label>
-    <input class="formdata" type="number"><br><br>
-    <label>Email Address</label>
-    <input class="formdata" type="email"><br><br>
-    <label>Password</label>
-    <input class="formdata" type="password"><br><br>
-   
-</form>
-<button type="submit" onclick="submit()">Submit</button><br><br>
-<table class="table">
-    <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Number</th>
-        <th>Email</th>
-        <th>Password</th>
-    </tr>
-</table>
-
-  -->
-
-  <!-- chapter 58 to 67---task 7 -->
 <!-- 
-<div> 
-    <h1> DOM </h1> 
-    <div class="content" id="form-content" > 
-        <label for="first-name">First Name</label>
-         <input type="text" id="first-name" />
-          <label for="last-name">Last Name</label> 
-          <input type="text" id="last-name" /> 
-          <label for="email">Email</label>
-           <input type="text" id="email" />
-        </div> 
-        <div  class="content" id="main-content">
-             <p class="render"> First Name : Alex</p> 
-             <p class="render" id="lastName">Last Name: Bank</p> 
-             <p class="render"> Email : alexbank@example.com</p>
-              <p class="render"> Country : Pakistan </p> 
-              <p class="render"> contact : +92 300 1234567</p>
-             </div> 
-            </div> -->
+  <h1>Student Form</h1>
+  <form action="#" >
+      <label>Student Name</label>
+      <input id="name" type="text"></input><br><br>
+      <label>Student Class</label>
+      <input id="std-class" type="text"><br><br>
+      <button type="submit" onclick="createRow()">Submit</button><br><br>
+  </form>
+
+  <form action="#" id=editForm style="display: none;">
+      <h1>Edit Student Record</h1>
+      <label>Student Name</label>
+      <input id="editname" type="text"></input><br><br>
+      <label>Student Class</label>
+      <input id="editclass" type="text"><br><br>
+      <button onclick="saveChange()">Save Change</button><br><br>
+  </form>
+
+
+
+<h1>Student Table</h1>
+<table class="student-table table" >
+  <tr>
+      <th>Names</th>
+      <th>Classes</th>
+  </tr>
+</table> -->
+
+
+ <!-- Chapter 52- 57 -- Question 1-->
+ 
+<div id="modal" class="modal"> 
+    <span class="close" id="modal-close" onclick="onClosedImag()"> </span>
+    <img class="modal-content" id="modal-img">
+</div>   
+
+<!-- Chapter 52- 57 -- Question 2-->
+<!-- 
+ <p id = "para" style="font-size: 30px;">  This is a paragraph</p>
+<button onclick = "zoomIn()"> + </button>
+<button onclick = "zoomOut()"> - </button>  -->
+
+<!-- Chapter 58 - 67 -->
+
+<!-- <div><h1> DOM </h1><div id="form-content" class="content"><label for="first-name">First Name</label>
+    <input type="text" id = "first-name"/>
+    <label for="last-name">Last Name</label>
+    <input type="text" id= "last-name"/>
+    <label for="email">Email</label>
+    <input type="text" id="email"/>
+</div>
+<div id="main-content" class="content">
+    <p class="render"> First Name : Alex</p>
+    <p class="render" id="lastName">Last Name: Bank</p>
+    <p class="render"> Email : alexbank@example.com</p>
+    <p class="render"> Country : Pakistan </p>
+    <p class="render"> contact : +92 300 1234567</p>
+</div>
+</div> --> 
+
+
+            <script src="app.js"></script>
 </body>
 </html>
